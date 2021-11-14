@@ -17,8 +17,7 @@ intro:-
 stream(Tag):-
     nl, write('Please enter your stream(enter common to get the common courses): '), nl,
     assert(yes(common)),
-    read(Tag).
-    /*
+    read(Stream),
     (((Stream==common)-> (true));
     ((Stream==cse)-> (assert(yes(coreCS)), retract(yes(common))));
     ((Stream==csb)-> (assert(yes(biology)), retract(yes(common))));
@@ -27,7 +26,6 @@ stream(Tag):-
     ((Stream==csss)-> (assert(yes(ssh)), retract(yes(common))));
     ((Stream==csam)-> (assert(yes(math)), retract(yes(common))));
     ((Stream==csai)-> (assert(yes(aI)), retract(yes(common))))).
-    */
 
 
 recommend(L, Tag1):-
