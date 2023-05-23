@@ -1,0 +1,86 @@
+A company is designing a Spring / Damper / Mass system similar to that seen below.
+The system will be used as part of a loading platform, where a load will be placed
+upon the platform for transportation. The company have asked you to simulate the
+system using a MATLAB script and a Simulink model, and using various values for
+each parameter to help with their final design process.
+They will be providing you with various combinations of values for the platform
+mass, spring, and damper in Excel format, and would like the script to test each
+set of values automatically in terms of displacement. This will allow the optimum
+values to be found for the system requirements, when a force is applied in a step
+response (the load).
+The company has asked for each set of values to be simulated using two methods
+within the same MATLAB script, as comparison results. They would also like the
+results of both methods to be shown on a graph, with a separate graph for each
+combination of values.
+The Simulink model will be used as an alternative method of testing the system
+by the company staff, and should be called automatically from the MATLAB script.
+It should be a representation of the differential equation of the system.
+A comparison result should also be achieved in the same model through the
+derivation of the system transfer function, and applying it to the Simulink model.
+These values should be then imported back into the MATLAB script and displayed
+on a graph in the same fashion as described above.
+Your line manager has provided you with a list of tasks that the program needs
+to meet the specification required from the company. This will be used as a starting
+point for the script to be created. They have also asked for you to produce a report
+to include the methods and findings for both the MATLAB script and the Simulink
+model.
+As previously stated, the values provided for testing will be in the format of an
+Excel document. However, there are several issues with the data. Firstly, a mistake
+has been flagged that some of the data damper values have been given as 22.9, when
+the correct value should be 29.2. Secondly, the sample only contains a limited set
+of values. (The real data will be of an unknown length, so the script will have to
+work for a data set of any size.)
+the force that will be applied to the platform will be calculated from the mass
+of the object placed on the platform, and its acceleration due to gravity.
+The mass of the object will be calculated from your student number, and the
+value of 9.81m/s2 will be used for gravity.
+(NOTE: Do not get this mass value confused with that of the platform. This is
+the mass of the object being placed upon the platform mass).
+
+Using your knowledge of MATLAB and coding techniques including loops, condi-
+tionals, and functions. Create a MATLAB script to fulfil the scenario described
+above, to show the step response of the system. Your line manager has provide you
+with the following breakdown of tasks that the script needs to perform as required.
+Make sure the script is nicely commented so your line manager can see exactly what
+has been coded.
+• The value of OBJECT mass to be applied to the system will be calculated
+from the final three digits of your student number represented here by xyz,
+and applied to the following equation. Display this value and the last three
+digits of your student number to the console.
+T = 45 × xyz
+999 + 5 (1)
+Calculate this within the MATLAB script, and round it up to 1dp. (2 Marks)
+• Calculate the force that will be applied to the system by the object, and display
+both the mass and the force to the console. (2 Marks).
+• Import the Excel data provided and convert the data to array format.(2 Marks)
+• Correct wrongly entered spring values for a data set of any length. Then
+display the entire data set to the console in a table format (4 Marks)
+• Request the time length of the simulation as an input from the user and assign
+it to the relevant variable. (2 Marks)
+• Use your knowledge of loops and arrays to provide the simulation results for
+a data set of unknown length. (5 Marks)
+• Write a function to represent the system in the form of a differential equation,
+and solve it with each set of values using the ode45 function. (5 Marks)
+• Create a function that uses the Euler integration method, using a suitable
+time-step to do the same as above. (6 Marks)
+• Companion Simulnk model called, and resulting values returned (2 Marks
+• Plot the results of both MATLAB methods on the same graph to compare the
+results, and use a second graph to display results imported from the Simulink
+model. Have a separate set of graphs for each row of dataset values, ensuring
+that each graph is correctly titled, labeled, and all results can be seen clearly.(5
+Marks)
+• The correct use of commenting and naming conventions. (3 Marks)
+• Good coding structure, understanding and technique. (2 Marks)
+Total 40 marks
+
+Create a Simulink model to represent and solve the differential equation that rep-
+resents the suspension system, and output the response of the system to a scope.
+Then derive and add the transfer function of the system sending the results to the
+same scope for comparison. Use the values for the mass, damper and spring from
+the first row of the sample data, and the value of force that was calculated in the
+MATLAB script, to test the response.
+• Creation of the system differential equation model in Simulink with resulting
+values passed back to the MATLAB script (8 marks)
+• Calculation of system transfer function and correct blocks to the Simulink
+model with the resulting values passed back to the MATLAB script.
+
